@@ -6,7 +6,7 @@ library(plotly)
 library(readr)
 
 # Load the dataset
-data <- read_csv("D:/Hari/Datasets/Custom SDA goal 16/Data_Unpivoted_Custom_SDG16 _LDA.csv")
+data <- read_csv("/File Path Here")
 
 # Define UI
 ui <- fluidPage(
