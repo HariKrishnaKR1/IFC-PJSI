@@ -7,7 +7,7 @@ library(sf)
 library(DT)
 
 # Load Data
-load(url("https://raw.githubusercontent.com/HariKrishnaKR1/ICF-PJSI/main/Data/Files.RData"))
+load(url("https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/main/Data/Files.RData"))
 
 # Data Preparation
 data$State <- as.character(data$State)
