@@ -1,5 +1,5 @@
 # ICF-PJSI
-## Indicator Frameworks for Sustainability | Localising and Adapting SDG frameworks |Peace, Justice and Strong Institutions
+## Indicator Frameworks for Sustainability | Localising and Adapting SDG frameworks Using National Public Datasets | Peace, Justice and Strong Institutions
 
 
 India has many different states, some bigger and more diverse than some countries. But due to this diversity, we also often see conflict due to various diverse backgrounds. This country is also the largest in terms of population as of 2024, and along with it comes the hard task of administering and managuing such a huge diverse population. Thus it is important to not only gain detailed information but also information which is detailed in nature, which raises the need of a localised framework for measuring and collecting data. Also with countries around the world obligated to create sustainable development reports, and also gain information which can help towards equitable and sustainable development, there also raises a need for a framework which can accommodate such diversity and detail.
