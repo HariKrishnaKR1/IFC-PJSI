@@ -4,6 +4,8 @@
 ## Commits over the course of the Project
 This project was done at TISS for the 3rd semester and was developed accordingly afterwards. All coding outside excel started since 23-12-2024. The plan is to publish this (Scrollytelling + Interactive Indicator Sandbox) for Closeread's submissions
 
+---
+
 ### 23-12-2024
 - Created 2 trial versions of the RShiny application without maps.
   - Faced issues with coding across the dataset.
@@ -50,5 +52,23 @@ This project was done at TISS for the 3rd semester and was developed accordingly
 ### 26-12-2024
 - Set up the GitHub site.
 - Created the GitHub R Workspace and Imported all the files under this repository ICF-PJSI.
+- Added the average view for the dropdown.
+
+---
+
+### 27-12-2024
+- Repaired the sliders to publish version 1.3.5 with better dropdowns.
+- Major Layout changes with fluidpanels covering most of it in version 1.4.0:
+  - Sliders now are in fluid panel control.
+  - The State view and the Indicator view are more compact with the 'tabsetpanel()' and 'tabpanel()' functions giving good hierarchy.
+
+![image](https://github.com/user-attachments/assets/94280afd-e9af-4499-9293-ca6eccd934c2)
+
+---
+
+### 28-12-2024
+- Re-invented the layouts by adding page views Dashboard and Heatmaps for better understanding of the file under version 1.4.1 and 1.4.2
+
+![image](https://github.com/user-attachments/assets/6e06306c-bb9f-4141-9655-93f6ef297224)
 
 ---
