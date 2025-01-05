@@ -1,0 +1,176 @@
+---
+title: "Indicator Frameworks for Sustainability"
+subtitle: "Peace, Justice and Strong Institutions"
+description: "The **ICF-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Strong Institutions**. Using datasets like NCRB and NJDG, it creates a localised framework, rescaling indicators on a 0-100 scale. Results are displayed in a colour-coded format, making it intuitive for creating interventions towards sustainable development."
+author: K R Hari Krishna
+date: "01/05/2025"
+execute: 
+  eval: true
+  echo: false
+  warning: false
+format:
+  closeread-html:
+    cr-style:
+      narrative-background-color-sidebar: White
+      narrative-text-color-sidebar: black
+      section-background-color: White
+      narrative-font-size: 12pt
+      narrative-font-family: Merriweather
+    grid: 
+      body-width: 1000px
+    remove-header-space: True
+    debug-mode: false
+    embed-resources: true
+    css: "D:/Hari/Coding/R/Custom SDG 16/Interactive/Trial.css"
+    code-links: 
+      - text: GitHub Repo
+        icon: github
+        href: https://github.com/HariKrishnaKR1/IFC-PJSI
+---
+
+::::::::::::::::::::::::::: cr-section
+
+::: {focus-on="cr-17sdg"}
+
+# Indicator Frameworks for Sustainability
+
+## Peace, Justice and Strong Institutions
+
+The **ICF-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Strong Institutions**. Using datasets like NCRB and NJDG, it creates a localised framework, rescaling indicators on a 0-100 scale. Results are displayed in a colour-coded format, making it intuitive for creating interventions towards sustainable development.
+
+<br>
+<br>
+MADE BY
+
+#### K. R. Hari Krishna
+
+Connect with me on 
+<br>
+<a href="https://www.linkedin.com/in/krharikrishna/" target="_blank">
+  <img src="https://static.vecteezy.com/system/resources/previews/016/716/470/non_2x/linkedin-icon-free-png.png" alt="LinkedIn" style="width:20px; height:auto; margin-right:10px;">
+</a>
+<a href="https://github.com/HariKrishnaKR1" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" style="width:20px; height:auto;">
+</a>
+:::
+
+
+::: {focus-on="cr-17sdg"}
+## Backdrop
+
+[The Sustainable Development Goals (SDGs)](https://sdgs.un.org/goals) are a collection of 17 global objectives established by the United Nations in 2015 as part of the 2030 Agenda for Sustainable Development.
+
+Designed to replace the Millennium Development Goals, the SDGs apply universally to all countries, irrespective of their development status, and seek to address a broad range of interconnected global challenges, including poverty eradication, environmental sustainability, social equity, and economic growth, under the guiding principle of **"leaving no one behind."** <br> <br> Each goal is further divided into specific targets—totalling 169—and measured by 232 unique indicators to track progress. However, progress has been uneven and faces significant obstacles, such as rising inequality, climate change, biodiversity loss, and the impact of the COVID-19 pandemic. One major obstacle is the **relevance of indicators to all countries.**
+:::
+
+::: {#cr-17sdg}
+![](https://www.undp.org/sites/g/files/zskgke326/files/styles/scaled_image_large/public/migration/tr/UNDP-TR-SDG-GRID-EN-3.png?itok=VSN32P9K)
+:::
+
+::: {#cr-indiacoal}
+![](https://flowcharts.llnl.gov/sites/flowcharts/files/styles/orig/public/ENERGY_2017_INDIA.png?itok=Tv8F800j)
+:::
+
+Some goals sometimes are not really sustainable for a country based on the contexts. An example on how the goals are not really relevant would be how India reliance on Coal for Energy. Despite significant investments in renewable energy, coal remains the cornerstone of India's electricity generation, accounting for **over *70%* of the energy mix**. A shift to other sources overnight would **render millions jobless and stranded without proper sources of energy, shutting down business and crashing the economy.** @cr-indiacoal
+
+Localising the SDGs thus cannot be limited to translating and integrating the global goals into local development and investment plans but must **integrate and extend to creating incentives** for public and private stakeholders to **collaborate, innovate, and co-design solutions which work in regional contexts**. @cr-17sdg
+
+Through this project, I intend to create a localised indicator framework for India, viable till the District level for **Peace, Justice and Strong Institutions**, using national public datasets such as the **National Crime Records Bureau (NCRB)** and the **National Judicial Data Grid (NJDG)** to create a localised framework.[@cr-17sdg]{pan-to="-25%,-80%" scale-by="3"}
+
+::: {focus-on="cr-eq"}
+To make the data comparable across indicators, each variable was **rescaled from 0 to 100, with 0 denoting worst performance and 100 describing the optimum**. Re-scaling is sensitive to the choice of limits and extreme values (outliers). The latter may become unintended thresholds and introduce variability in the data. Consequently, the choice of upper and lower bounds can affect the relative ranking of countries in the index 
+
+:::
+
+::: {focus-on="cr-eq"}
+
+While the lower bound was defined at the **2.5th percentile of the distribution**, 
+the upper bound for each indicator was determined using the following decision tree:
+
+1. Use the **absolute quantitative thresholds** of the SDGs and targets: e.g., zero poverty, universal school completion, universal access to water and sanitation, full gender equality.
+
+2. Where no explicit SDG target is available, **apply the principle of “Leave-No-One-Behind”** to set the upper bound to universal access, or zero deprivation.
+
+3. Where science-based targets exist that must be achieved by 2030 or later, **use these to set the 100% upper bound** (e.g., zero greenhouse gas emissions from CO₂ as required by no later than 2050 to limit global warming to 1.5°C, 100% sustainable management of fisheries).
+
+4. For all other indicators, use the **average of the top five performers**.
+
+These principles interpret the SDGs as “stretch targets” and focus attention on those indicators where a country is lagging behind. 
+:::
+
+::: {#cr-eq .scale-to-fill}
+![](https://dashboards.sdgindex.org/static/chapters/image-A-1.svg)
+:::
+
+
+::: {focus-on="cr-targets"}
+The Indicators are chosen from above mentioned datasets ranging from **IPC/SLL Crimes** to **Cases pending in Indian Courts**. Each indicator score is colour-coded with a gradient, with states and indicators coloured in:
+
+-   green (goal/target achieved/ on the route of success),
+
+-   yellow (some challenges remaining),
+
+-   orange (significant challenges remaining), or
+
+-   red (major challenges remaining).
+:::
+
+These Indicators focus on **Peace** [@cr-targets]{highlight="1,2,3,4,9"}
+
+These focus on **Justice** [@cr-targets]{highlight="1,6"}
+
+And these focus on **Strong Institutions** [@cr-targets]{highlight="1,5,7,8"}
+
+| {#cr-targets .scale-to-fill}
+| **Targets**
+| 1. End all forms of violence and related death rates everywhere
+| 2. End the illicit and unlawful usage of arms and explosives
+| 3. End abuse, exploitation, trafficking, and all forms of violence and torture against women and children
+| 4. Promote and enforce non-discriminatory practices for all
+| 5. Provide timely and non-discriminatory judicial services to all
+| 6. End all forms of offences against property and related documentation
+| 7. Develop effective, accountable, and transparent institutions for all
+| 8. Promote peaceful and inclusive societies for all
+
+Here is a detailed view with all indicators @cr-dttargets
+
+::: {#cr-dttargets}
+![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/image.png)
+:::
+
+We see India scores relatively well, as the **national average is around 78%**, but with **the scores vary from the low 50s to the low 90s**, there is a bit of variation and uneven implementation of peace and security measures. @cr-india-t0
+
+We see that **North East** as a whole seems to perform exceptionally well in these metrics. [@cr-india-t0]{pan-to="-30%,0%" scale-by="2.5"}
+
+Meanwhile, Delhi, Haryana and the North seem to score comparatively low. Delhi, the capital City scores only around **58%**.[@cr-india-t0]{pan-to="10%,30%" scale-by="2.5"}
+
+Inspecting a view based on the heatmap, we see that, again most of the table looks, green, suggesting that most perform well in these metrics. But again it is only the _most of them_. @cr-heatmap
+
+When we see the scores for **Target 8**, we see that it has many of them on the path to achieving or already achieved the goals. [@cr-heatmap]{pan-to="-30%,0%" scale-by="1.2"}
+
+Meanwhile, many states, mostly in Northern India, score very low in **Targets 2 and 5**. There's significant issues and backlogs in judicial service in states like **Chandigarh (0.58) and Himachal Pradesh (5.42)** show alarming deficiencies. Meanwhile **Delhi ranks the lowest in arms usage with Pradesh (1.82)** following closely. [@cr-heatmap]{pan-to="20%,20%" scale-by="1.2"}
+
+South Indian States like Tamil Nadu, Kerala, meanwhile seem to perform somewhat well, hogging up most of the midtable areas. [@cr-heatmap]{pan-to="-10%,-20%" scale-by="1.2"}
+
+When seeking the best achievers, the northeastern states consistently show strong performance across most targets. Nagaland, for instance, achieves **perfect scores (100) in Targets 4 and 5**, showing great implementation of non-discriminatory practices and judicial services. But these regions also are comparatively sparsely populated and thus is easier to achieve such goals.[@cr-heatmap]{pan-to="-10%,5%" scale-by="1.2"}
+
+::: {focus-on="cr-heatmap"}
+Through this exercise, this helps India better align with the United Nations Sustainable Development Goals (SDGs), specifically in the areas of Peace, Justice, and Strong Institutions using already available national data from sources. <br>
+
+One key insight is that while some states and regions are doing well, **there are clear disparities, especially in terms of judicial efficiency and security**. These differences point to the need for more targeted interventions to address local challenges. <br>
+
+Another important insight is the potential for **scaling the framework to the district level**, which can provide even more detailed data. This level of granularity allows for a better understanding of local issues  and help solve them in better methods.
+:::
+
+**Ultimately, the ICF-PJSI measures progress and helps guide action**. It can give policymakers, government bodies, and stakeholders clear data and insights for better decisions, confirming efforts towards achieving sustainable development in a regional context. @cr-17sdg
+
+
+::: {#cr-heatmap}
+![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/htmap.png)
+:::
+
+::: {#cr-india-t0}
+![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/T0.png)
+:::
+
+:::::::::::::::::::::::::::

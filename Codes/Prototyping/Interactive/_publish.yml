@@ -1,0 +1,4 @@
+- source: IFC-PJSI.qmd
+  quarto-pub:
+    - id: 72ca3f29-5b33-4098-92c5-891b85fba982
+      url: 'https://harikrishna.quarto.pub/ifc-pjsi'
