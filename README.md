@@ -14,4 +14,4 @@ The indicators were then grouped and classified under relevant targets and later
 
 
 ## Targets and Indicators	
-![image](https://github.com/user-attachments/assets/fd95edfe-d36d-4006-8935-bdbb8d179fa5)
+![image](https://github.com/user-attachments/assets/5dcd8efb-1efc-484d-a7be-86741a75d954)
