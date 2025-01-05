@@ -72,3 +72,19 @@ This project was done at TISS for the 3rd semester and was developed accordingly
 ![image](https://github.com/user-attachments/assets/6e06306c-bb9f-4141-9655-93f6ef297224)
 
 ---
+
+### 04-01-2025
+- Started the Closeread again. Tinkered with the already existing suggestions and their code.
+- Worked on a CSS for the whole setup.
+- Saved all the graphs as images to speed up loadtimes, at the cost of interactiveness.
+- Setup the Data Storytelling.
+
+---
+
+### 05-01-2025
+- Improved the basic data storytelling.
+- Added more information about the contexts of the exercise.
+- Finalised the content.
+- Setup and Published the site @ https://harikrishna.quarto.pub/ifc-pjsi/ !!!!!
+
+---
