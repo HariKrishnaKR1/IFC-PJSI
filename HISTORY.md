@@ -87,4 +87,6 @@ This project was done at TISS for the 3rd semester and was developed accordingly
 - Finalised the content.
 - Setup and Published the site @ https://harikrishna.quarto.pub/ifc-pjsi/ !!!!!
 
+![SCRS](https://github.com/user-attachments/assets/95dc5256-f8b7-49a1-b72a-16b1ebf252b6)
+
 ---
