@@ -1,7 +1,7 @@
 ---
 title: "Indicator Frameworks for Sustainability"
 subtitle: "Peace, Justice and Strong Institutions"
-description: "The **ICF-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Strong Institutions**. Using datasets like NCRB and NJDG, it creates a localised framework, rescaling indicators on a 0-100 scale. Results are displayed in a colour-coded format, making it intuitive for creating interventions towards sustainable development."
+description: "The **IFC-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Strong Institutions**. Using datasets like NCRB and NJDG, it creates a localised framework, rescaling indicators on a 0-100 scale. Results are displayed in a colour-coded format, making it intuitive for creating interventions towards sustainable development."
 author: K R Hari Krishna
 date: "01/05/2025"
 execute: 
@@ -36,7 +36,7 @@ format:
 
 ## Peace, Justice and Strong Institutions
 
-The **ICF-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Strong Institutions**. Using datasets like NCRB and NJDG, it creates a localised framework, rescaling indicators on a 0-100 scale. Results are displayed in a colour-coded format, making it intuitive for creating interventions towards sustainable development.
+The **IFC-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Strong Institutions**. Using datasets like NCRB and NJDG, it creates a localised framework, rescaling indicators on a 0-100 scale. Results are displayed in a colour-coded format, making it intuitive for creating interventions towards sustainable development.
 
 <br>
 <br>
