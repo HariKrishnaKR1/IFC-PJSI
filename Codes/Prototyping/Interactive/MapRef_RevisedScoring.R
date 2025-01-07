@@ -18,11 +18,12 @@ unique_targets <- sort(as.numeric(unique(data$Target.Number)), na.last = NA)
 
 # Transform Spatial Data
 india_states <- st_transform(india_states, crs = 4326)
+
 # Function to Create Maps using bottom 3 indicators
 mapcreate <- function(data, india_states, unique_targets) {
   outputs <- list()
   
-  ### 1. Map for Overall Average Score (using bottom 3 indicators per target)
+  ### 1. Map for Overall Average Score (using average of all target values after bottom 3 calculations)
   overall_data <- data %>%
     # First get average for each indicator within each target and state
     group_by(Target.Number, Indicator.Number, State) %>%
@@ -35,8 +36,13 @@ mapcreate <- function(data, india_states, unique_targets) {
     group_by(State) %>%
     summarise(Average_Value = mean(Indicator_Avg, na.rm = TRUE))
   
+  # Now calculate the average of these overall averages across all targets for each state
+  overall_data_final <- overall_data %>%
+    group_by(State) %>%
+    summarise(Overall_Average_Value = mean(Average_Value, na.rm = TRUE))
+  
   india_states_joined <- india_states %>%
-    left_join(overall_data, by = "State")
+    left_join(overall_data_final, by = "State")
   
   pal <- colorNumeric(
     palette = colorRampPalette(c("#FF0000", "#FFFF00", "#017D13"))(100),
@@ -47,18 +53,18 @@ mapcreate <- function(data, india_states, unique_targets) {
   overall_map <- leaflet(india_states_joined) %>%
     addTiles() %>%
     addPolygons(
-      fillColor = ~pal(Average_Value),
+      fillColor = ~pal(Overall_Average_Value),
       color = "white",
       weight = 1,
       opacity = 1,
       fillOpacity = 0.7,
-      label = ~paste(State, ":", round(Average_Value, 2), "%"),
+      label = ~paste(State, ":", round(Overall_Average_Value, 2), "%"),
       highlightOptions = highlightOptions(color = "black", weight = 2, bringToFront = TRUE)
     ) %>%
     addLegend(
       pal = pal, 
-      values = india_states_joined$Average_Value, 
-      title = "Average Value (Bottom 3 Indicators)", 
+      values = india_states_joined$Overall_Average_Value, 
+      title = "Average Value (Across All Targets)", 
       labFormat = labelFormat(suffix = "%")
     )
   

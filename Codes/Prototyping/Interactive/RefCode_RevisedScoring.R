@@ -102,7 +102,7 @@ create_static_outputs <- function(data, india_states, unique_targets) {
         group_by(State, Indicator.Number) %>%
         summarise(Indicator_Avg = mean(Final.Value, na.rm = TRUE), .groups = "drop") %>%
         group_by(State) %>%
-        arrange(Statdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAABBklEQVR4Xu2XMQrCQBBFBQvR6wgJHsEDpHVjBDvvoBhbI3bWCkZbFUyhFrYiEat0WgmC6AVkdQqbIVmWZAOi82C64b+/bDWZDEEQP4phTLMaa9d003bTGMgu1psF7JVGNzuWPdzs18GDz443rgrIcndXbvW8g1axGfZKo7P2eBXc+WB74a3FGXtiA1kwzfnpqTF7hL3SwDfAaz+BqvjkwYADe6WhglQwJlQwKVQwKakVTGOoYNL5z4JxwBlUMEwqAu9SwTCpCLxLBcOkIvCusoKT9/WFQ6OkIvCukoJwt5rO0sehUVIReBem6ng+OLBXmnKjn4PbGM5PeKnqgXIlo5vHXoL4Nl4ZYqbbEGA7+wAAAABJRU5ErkJggg==e, Indicator_Avg) %>%
+        arrange(State, Indicator_Avg) %>%
         slice_head(n = 3) %>%
         summarise(Average_Score = round(mean(Indicator_Avg, na.rm = TRUE), 2))
       
@@ -155,9 +155,14 @@ create_static_outputs <- function(data, india_states, unique_targets) {
 # Create Static Outputs
 static_outputs <- create_static_outputs(data, india_states, unique_targets)
 
-
 # Save all ggplot outputs
 output_directory <- "D:/Hari/Coding/R/Custom SDG 16/Interactive/"  # Specify your output directory
+
+# Ensure output directory exists
+if (!dir.exists(output_directory)) {
+  dir.create(output_directory, recursive = TRUE)
+}
+
 # Iterate through the outputs and save the ggplot objects
 for (name in names(static_outputs)) {
   plot_object <- static_outputs[[name]]
