@@ -42,7 +42,7 @@ The **IFC-PJSI** adapts UN SDGs to India, focusing on **Peace, Justice, and Stro
 <br>
 MADE BY
 
-#### K. R. Hari Krishna
+#### **K. R. Hari Krishna**
 
 Connect with me on 
 <br>
@@ -78,13 +78,16 @@ Localising the SDGs thus cannot be limited to translating and integrating the gl
 Through this project, I intend to create a localised indicator framework for India, viable till the District level for **Peace, Justice and Strong Institutions**, using national public datasets such as the **National Crime Records Bureau (NCRB)** and the **National Judicial Data Grid (NJDG)** to create a localised framework.[@cr-17sdg]{pan-to="-25%,-80%" scale-by="3"}
 
 ::: {focus-on="cr-eq"}
+## Methodology
+
 To make the data comparable across indicators, each variable was **rescaled from 0 to 100, with 0 denoting worst performance and 100 describing the optimum**. Re-scaling is sensitive to the choice of limits and extreme values (outliers). The latter may become unintended thresholds and introduce variability in the data. Consequently, the choice of upper and lower bounds can affect the relative ranking of countries in the index 
 
 :::
 
 ::: {focus-on="cr-eq"}
+### Normalising Indicators and Defining the Bounds
 
-While the lower bound was defined at the **2.5th percentile of the distribution**, 
+<br>While the lower bound was defined at the **2.5th percentile of the distribution**, 
 the upper bound for each indicator was determined using the following decision tree:
 
 1. Use the **absolute quantitative thresholds** of the SDGs and targets: e.g., zero poverty, universal school completion, universal access to water and sanitation, full gender equality.
@@ -94,17 +97,31 @@ the upper bound for each indicator was determined using the following decision t
 3. Where science-based targets exist that must be achieved by 2030 or later, **use these to set the 100% upper bound** (e.g., zero greenhouse gas emissions from CO₂ as required by no later than 2050 to limit global warming to 1.5°C, 100% sustainable management of fisheries).
 
 4. For all other indicators, use the **average of the top five performers**.
-
-These principles interpret the SDGs as “stretch targets” and focus attention on those indicators where a country is lagging behind. 
 :::
+
+::: {focus-on="cr-flow"}
+### Weighting the Indicators and the Targets for calculating the Final Score.
+
+<br> The Indicators after being processed and normalised are then combined with other indicators under the same Target to compute the value of the target. This is done by calculating the **average of the lowest 3 indicators in the target**. <br> <br>
+
+When we assess development by focusing on the lowest-performing indicators, the **society's uneven progress is to be shown better for highlighting areas for development**. This approach is inspired from Amartya Sen's approach to development, that **true development means expanding all fundamental capabilities and freedoms**. When we focus on the bottom 3 indicators, we're essentially identifying where these capabilities are most limited.
+:::
+
+When considering the overall score based on the target scores, **the overall score should average all Target scores rather than just the bottom 3**.  The target level already shows the distinct issues in critical areas and considering the process again will just filter the values again making it not a fair assessment. The targets themselves are distinct domains, which cannot be compensated by other domains unlike the indicators, making it more sensible to consider a simpler average methodology.<br> <br> These principles in total, interpret the goals as **“stretch targets”** and focus attention on those indicators where a country is lagging behind.
 
 ::: {#cr-eq .scale-to-fill}
 ![](https://dashboards.sdgindex.org/static/chapters/image-A-1.svg)
 :::
 
+::: {#cr-flow .scale-to-fill}
+![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/Flowchart.png
+)
+:::
 
 ::: {focus-on="cr-targets"}
-The Indicators are chosen from above mentioned datasets ranging from **IPC/SLL Crimes** to **Cases pending in Indian Courts**. Each indicator score is colour-coded with a gradient, with states and indicators coloured in:
+### Indicators
+
+<br>The Indicators are chosen from above mentioned datasets ranging from **IPC/SLL Crimes** to **Cases pending in Indian Courts**. Each indicator score is colour-coded with a gradient, with states and indicators coloured in:
 
 -   green (goal/target achieved/ on the route of success),
 
@@ -138,39 +155,48 @@ Here is a detailed view with all indicators @cr-dttargets
 ![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/image.png)
 :::
 
-We see India scores relatively well, as the **national average is around 78%**, but with **the scores vary from the low 50s to the low 90s**, there is a bit of variation and uneven implementation of peace and security measures. @cr-india-t0
+::: {focus-on="cr-india-t0"}
+## Analysis
 
-We see that **North East** as a whole seems to perform exceptionally well in these metrics. [@cr-india-t0]{pan-to="-30%,0%" scale-by="2.5"}
-
-Meanwhile, Delhi, Haryana and the North seem to score comparatively low. Delhi, the capital City scores only around **58%**.[@cr-india-t0]{pan-to="10%,30%" scale-by="2.5"}
-
-Inspecting a view based on the heatmap, we see that, again most of the table looks, green, suggesting that most perform well in these metrics. But again it is only the _most of them_. @cr-heatmap
-
-When we see the scores for **Target 8**, we see that it has many of them on the path to achieving or already achieved the goals. [@cr-heatmap]{pan-to="-30%,0%" scale-by="1.2"}
-
-Meanwhile, many states, mostly in Northern India, score very low in **Targets 2 and 5**. There's significant issues and backlogs in judicial service in states like **Chandigarh (0.58) and Himachal Pradesh (5.42)** show alarming deficiencies. Meanwhile **Delhi ranks the lowest in arms usage with Pradesh (1.82)** following closely. [@cr-heatmap]{pan-to="20%,20%" scale-by="1.2"}
-
-South Indian States like Tamil Nadu, Kerala, meanwhile seem to perform somewhat well, hogging up most of the midtable areas. [@cr-heatmap]{pan-to="-10%,-20%" scale-by="1.2"}
-
-When seeking the best achievers, the northeastern states consistently show strong performance across most targets. Nagaland, for instance, achieves **perfect scores (100) in Targets 4 and 5**, showing great implementation of non-discriminatory practices and judicial services. But these regions also are comparatively sparsely populated and thus is easier to achieve such goals.[@cr-heatmap]{pan-to="-10%,5%" scale-by="1.2"}
-
-::: {focus-on="cr-heatmap"}
-Through this exercise, this helps India better align with the United Nations Sustainable Development Goals (SDGs), specifically in the areas of Peace, Justice, and Strong Institutions using already available national data from sources. <br>
-
-One key insight is that while some states and regions are doing well, **there are clear disparities, especially in terms of judicial efficiency and security**. These differences point to the need for more targeted interventions to address local challenges. <br>
-
-Another important insight is the potential for **scaling the framework to the district level**, which can provide even more detailed data. This level of granularity allows for a better understanding of local issues  and help solve them in better methods.
+We see India scores relatively well, as the **national average is around the average**, but with **the scores vary from the high 30s to the high 80s**, there is a bit of variation and uneven implementation of peace and security measures.
 :::
 
-**Ultimately, the ICF-PJSI measures progress and helps guide action**. It can give policymakers, government bodies, and stakeholders clear data and insights for better decisions, confirming efforts towards achieving sustainable development in a regional context. @cr-17sdg
+We see that **North East** as a whole seems to perform well in these metrics. For example Nagaland which scores **85%**. [@cr-india-t0]{pan-to="-32%,5%" scale-by="2.6"}
+
+Meanwhile, Delhi, Haryana and the North seem to score comparatively low. Delhi scores only **40%** while Haryana scores only **32%**. [@cr-india-t0]{pan-to="10%,30%" scale-by="2.6"}
+
+Inspecting the heatmap, we see an **abundance of values between the 0-50 range**, suggesting that most do not perform well in these metrics with many significant challenges remaining in many core themes. @cr-heatmap
+
+Many states, mostly in Northern India, score very low. **Haryana**, for example, ranks the lowest in ending violence and related deaths with the other states and UTs following closely behind.[@cr-heatmap]{pan-to="-10%,10%" scale-by="1.2"}
+
+Other Indian States like Tamil Nadu, Maharastra, meanwhile seem to perform somewhat well, hogging up most of the mid-table areas, but in some indicators Kerala for example has a lower score in discrimination and violence against women. But this might be due to the higher education levels and the higher chance to report the cases. [@cr-heatmap]{pan-to="-10%,-20%" scale-by="1.2"}
+
+::: {focus-on="cr-heatmap"}
+Through this exercise, this helps India better align with the United Nations Sustainable Development Goals (SDGs), specifically in the areas of Peace, Justice, and Strong Institutions using already available national data from sources. <br> <br>
+
+One key insight is that **India needs to improve in many crucial areas**. States and UTs need to focus on balanced development rather than excelling in isolated indicators. The data suggests that even well-performing states have significant gaps in certain areas.
+:::
+
+::: {focus-on="cr-dttargets"}
+## Limitations
+
+<br>One limitation is to address is the **relatively low number of indicators in Target 2, 5  and 7** which will be addressed in a future update.<br>
+
+<br> Further studies need to be done to find the **actual rate of crimes** compared to the reported crimes.<br>
+
+<br>Future implementations will explore on the **interactivity** and the ability to **drill down** data to view districts for better insights.
+:::
+
+**Ultimately, the IFC-PJSI measures progress and helps guide action**. It can give policymakers, government bodies, and stakeholders clear data and insights for better decisions, confirming efforts towards achieving true development and a better future. @cr-17sdg
+
 
 
 ::: {#cr-heatmap}
-![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/htmap.png)
+![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/heatmap_overall.png)
 :::
 
 ::: {#cr-india-t0}
-![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/T0.png)
+![](https://raw.githubusercontent.com/HariKrishnaKR1/IFC-PJSI/refs/heads/main/Maps/MapSample.png)
 :::
 
 :::::::::::::::::::::::::::
