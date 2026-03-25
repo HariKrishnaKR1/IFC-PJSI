@@ -3,6 +3,7 @@
 
 Link to site: https://harikrishna.quarto.pub/ifc-pjsi/ <br>
 For a detailed update history, see [Update History here.](https://github.com/HariKrishnaKR1/IFC-PJSI/blob/main/HISTORY.md)
+For the detailed analysis alongside an excel dashboard see [SDG16 Localised.xlsx.](https://github.com/HariKrishnaKR1/IFC-PJSI/blob/main/Data/SDA_Data_SDG16.xlsx)
 
 India has many different states, some bigger and more diverse than some countries. But due to this diversity, we also often see conflict due to various diverse backgrounds. This country is also the largest in terms of population as of 2024, and along with it comes the hard task of administering and managuing such a huge diverse population. Thus it is important to not only gain detailed information but also information which is detailed in nature, which raises the need of a localised framework for measuring and collecting data. Also with countries around the world obligated to create sustainable development reports, and also gain information which can help towards equitable and sustainable development, there also raises a need for a framework which can accommodate such diversity and detail.
 
